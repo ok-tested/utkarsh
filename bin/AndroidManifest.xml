@@ -1,0 +1,2078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dm.utkarsh"
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        
+        android:minSdkVersion="14"
+        android:targetSdkVersion="20" />
+    <uses-permission   android:name="android.permission.INTERNET"/>
+    <uses-permission   android:name="android.permission.CALL_PHONE"/>
+    <uses-permission   android:name="android.permission.VIBRATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.NEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             <intent-filter>
+                    <action android:name="android.intent.action.URL" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <data android:scheme="http" />
+               </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".StartingPoint"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name =".Home_Fragment"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HOME"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        <activity 
+            android:name =".AboutUs"
+            android:label="@string/app_name"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            
+            android:screenOrientation="portrait">
+             <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">-->
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ABOUTUS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+    
+    <activity 
+            android:name =".EventsByCategory"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            >
+           <!--    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> --> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.EVENTBYCATEGORY"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+    <activity 
+            android:name =".ContactUs"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CONTACTUS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         
+     
+      <activity 
+            android:name =".LiteraryEvents"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LITERARYEVENTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+       
+      <activity 
+            android:name =".CulturalEvents"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CULTURALEVENTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+       
+      <activity 
+            android:name =".FineArts"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINEARTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+        
+      
+        <activity 
+            android:name =".Developer"
+            android:screenOrientation="portrait"
+                       android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            
+            android:label="@string/app_name">
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DEV"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         
+        
+          <activity 
+            android:name =".TechnicalEvents"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.TECHNICALEVENTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+      
+        <activity 
+            android:name =".InformalEvents"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.INFORMALEVENTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+          <activity 
+            android:name =".SportsEvent"
+            android:screenOrientation="portrait"
+           android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SPORTEVENTS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+           <activity 
+            android:name =".SetNotification"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SETNOTIFICATION"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+           <activity 
+            android:name =".Display_Notification"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DN"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+            <activity 
+            android:name =".wordemort"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.WORDEMORT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+        
+            <activity 
+            android:name =".Event"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.EVENT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         <activity 
+            android:name =".graymatter"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GRAYMATTER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         <activity 
+            android:name =".mobihasa"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MOBIHASA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+            
+            
+                  
+        
+            
+                        
+        
+            <activity 
+            android:name =".theomachy"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.THEOMACHY"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".shabdrang"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SHABDRANG"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+                    
+        
+            <activity 
+            android:name =".samveg"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SAMVEG"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+                    
+        
+            <activity 
+            android:name =".grammernazi"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GMNZI"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".consiliumprincipis"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CNSPIS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".visiondecritique"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.VSNCRTQ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".mehfileutkarsh"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MHFUTKS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".shamsheeretaqreer"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SHTQR"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        
+        
+            <activity 
+            android:name =".declarationofres"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DORES"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+                    
+        
+            <activity 
+            android:name =".mushairra"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MUSHAIRRA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+             <activity 
+            android:name =".openingceremony"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.OPENINGCEREMONY"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+              <activity 
+            android:name =".rockafire"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ROCKAFIRE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+               <activity 
+            android:name =".glamfiestaintro"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GLAMFIESTAINTRO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         <activity 
+            android:name =".carnivaldance"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CARNIVALDANCE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         <activity 
+            android:name =".mimosarto"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MIMOSARTO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+         <activity 
+            android:name =".bbdidol"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BBDIDOL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+         <activity 
+            android:name =".actitorial"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ACTITORIAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+          <activity 
+            android:name =".glamfiesta"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GLAMFIESTA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+         <activity 
+            android:name =".bonzeround1"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BONZERROUND1"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+          <activity 
+            android:name =".groovearmada"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GROOVEARMADA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+           <activity 
+            android:name =".lavolta"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LAVOLTA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+            <activity 
+            android:name =".glamfiestatalent"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GLAMFIESTATALENT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+             <activity 
+            android:name =".sonicals"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SONICALS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+              <activity 
+            android:name =".singchronised"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SINGCHRONISED"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+               <activity 
+            android:name =".histronics"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HISTRONICS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+            
+                <activity 
+            android:name =".faceoff"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FACEOFF"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                 <activity 
+            android:name =".footofflaire"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FOOTOFLAIRE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                  <activity 
+            android:name =".spoofdecreato"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SPOOFDECREATO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                   <activity 
+            android:name =".reverb"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.REVERB"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                    <activity 
+            android:name =".stepsynchro"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.STEPNSYNCHRO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                     <activity 
+            android:name =".publicitio"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.PUBLICITO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                      <activity 
+            android:name =".utkarshunplugged"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.UTKARSHUNPLUGGED"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                       <activity 
+            android:name =".folkomania"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FOLKOMANIA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                        <activity 
+            android:name =".indistortion"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.INDISTORTION"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+                         <activity 
+            android:name =".streetldrama"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.STREETELDRAMA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+            <activity 
+            android:name =".bonzerround2"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BONZERROUND2"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+             <activity 
+            android:name =".soloeldanza"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SOLOELDANZA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+              <activity 
+            android:name =".raprimanda"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RAPRIMANDE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+         <activity 
+            android:name =".glamfiestaqanda"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GLAMFIESTAQANDA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+          <activity 
+            android:name =".comicradle"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.COMICRADLE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+           <activity 
+            android:name =".closingceremony"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CLOSINGCEREMONY"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity> 
+        
+           <activity 
+            android:name =".expoquiz"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.EXPOQUIZ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+           <activity 
+            android:name =".megabucks"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MEGABUCKS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".dicodifica"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DICODIFICA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".minirobowars"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MINIROBOWARS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".robosoccer"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ROBOSOCCER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".linefollower"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LINEFOLLOWER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".roborace"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ROBORACE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".robowarsreloaded"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ROBOWARSRELOADED"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".utkarshtechexpo"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.UTKARSHTECHEXPO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".bazarelectronico"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BAZARELECTRINO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".lightfollowe"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LIGHTFOLLOWER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".searchspider"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SEARCHSPIDER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".junkyardwars"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.JUNKYARDWARS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".braintornado"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BRAINTORNADO"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".quizsociale"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.QUIZSOCIALE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".searchspiderfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SEARCHSPIDERFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".junkyardwarsfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.JUNKYARDWARSFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".knowwid"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.knowwid"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".quizsocalfinale"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.QUIZSOCIALEFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".minirobowarsfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MINIROBOWARSFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".linefolloerfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LINEFOLLOWERFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".dicodificafinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DICODIFICAFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".knowwidfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.KNOWWIDFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".braintornadofinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BRAINTORNADOFINAL"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".blueprint"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BLUEPRINT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".technicoquiz"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.TECHNICOQUIZ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".schedios"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SCHEDIOS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".muralista"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MURALISTA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".consillium"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CONSILIUM"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".vestisornatus"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.VESTISORNATUS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".sculpturae"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SCULPTURAE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".mehendika"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MEHENDIKA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".masquerade"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MASQUERADE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".masquer"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.MASQUER"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".vicumart"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.VICUMART"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".patangbazi"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.PATANGBAAZI"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".picturaecavea"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.PICTURAECAVEA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".perfectclick"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.PERFECTCLICK"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".alpana"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ALPANA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+       
+         <activity 
+            android:name =".starnight"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.STARNIGHT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+          <activity 
+            android:name =".desikalakar"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DESIKALAKAR"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+         <activity 
+            android:name =".hitthepot"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HITTHEPOT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+         <activity 
+            android:name =".hitthepot1"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HITTHEPOT2"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        <activity 
+            android:name =".goonj"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GOONJ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+         <activity 
+            android:name =".thesurvivors"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.THESURVIVORS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+        </activity>
+        
+          <activity 
+            android:name =".thesurvivors2"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.THESURVIVORS2"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+        </activity>
+        
+           <activity 
+            android:name =".thesurvivors3"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.THESURVIVORS3"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+        </activity>
+        
+         
+         
+        
+         
+        
+          <activity 
+            android:name =".heats200girls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HEATSTWOHUNDREDBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+          <activity 
+            android:name =".heats200boys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HEATSTWOHUNDRZXED"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+         
+         
+          <activity 
+            android:name =".bandbajabaraat"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BANDBAJABARAAT"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+         
+          <activity 
+            android:name =".iamgenius"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.IAMGENIUS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+         
+          <activity 
+            android:name =".bethenucleus"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BETHENUCLEUS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+           <activity 
+            android:name =".bethenucleus1"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BETHENUCLEUS1"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+         
+          
+           <activity 
+            android:name =".catfight"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CATFIGHT1"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+           <activity 
+            android:name =".catfight1"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CATFIGHT2"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+           <activity 
+            android:name =".catfight2"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.CATFIGHT3"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+          
+           
+            <activity 
+            android:name =".raprattle"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RAPRATTLE"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+            <activity 
+            android:name =".raprattle1"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RAPRATTLE1"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+            
+             <activity 
+            android:name =".amorfecha"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.AMORFECHA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+             
+              <activity 
+            android:name =".amorfecha2"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.AMORFECHA2"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              
+              <activity 
+            android:name =".amorfecha3"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.AMORFECHA3"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              <activity 
+            android:name =".alfaaz"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ALFAAZ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              
+               <activity 
+            android:name =".Autobuzz"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.AUTOBUZZ"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                <activity 
+            android:name =".bollywoodmania"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BOLLYWOODMANIA"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                 <activity 
+            android:name =".gadgetguru"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.GADGETGURU"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+           <activity 
+            android:name =".felicitation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FELICITATION"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+             <activity 
+            android:name =".battleofbands"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.BATTLEOFBANDS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+        
+              <activity 
+            android:name =".final1500"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINALFIFTEEN"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              
+              
+              <activity 
+            android:name =".final800girls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINALEIGHTHUNDREDGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              <activity 
+            android:name =".final800"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINALEIGHTHUNDREASDDGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+              
+        
+        
+               
+              <activity 
+            android:name =".heats100boys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HUNDREDHEATBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                 
+              <activity 
+            android:name =".heats100girls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HUNDREDHEATSGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+             
+             <activity 
+            android:name =".triplejumpfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.TRIPLEJUMPBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+             
+            <activity 
+            android:name =".heat200girls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.HEATSTWOHUNDREDBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+              
+            
+            <activity 
+            android:name =".shotputfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SHOTPUTG"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+            
+            <activity 
+            android:name =".triplejumpfinalgirls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.TRIPLEJUMPGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+              
+            
+             <activity 
+            android:name =".heats400girls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FOURHUNDREDHEATGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+              
+             
+             <activity 
+            android:name =".heats400boys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FOURHUNDREACXDHEATGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+             
+             <activity 
+            android:name =".longjumpfinalboys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LONGJUMPINGBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+             
+              
+             <activity 
+            android:name =".longjumpfinalgirls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.LONGJUMPINGGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+               <activity 
+            android:name =".girls200final"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINALTWOHUNGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+             
+              <activity 
+            android:name =".boys200final"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FINALBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+              
+              
+              <activity 
+            android:name =".boys400final"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RELAYBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+             
+              
+              
+              <activity 
+            android:name =".girls400final"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.FOURHUNAZGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                 
+              <activity 
+            android:name =".shotputboys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SHOTPUTB"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+               <activity 
+            android:name =".shotputgirls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.SHOTPUTG"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+               
+               <activity 
+            android:name =".discussgirls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DISCUSSGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+               
+               
+               <activity 
+            android:name =".discussboys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.DISCUSSBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+               
+                <activity 
+            android:name =".relay400finalgirls"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RELAAYGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                
+                 
+                <activity 
+            android:name =".relay400finalboys"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.RELAEYBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                
+                 <activity 
+            android:name =".mtr100boysfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ONEHUNBOYS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                 
+                  <activity 
+            android:name =".mtr100girlfinal"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+           <!--  android:theme="@android:style/Theme.NoTitleBar.Fullscreen">--> 
+            <intent-filter
+                >
+                <action android:name="android.intent.action.ONEHUNGIRLS"/>
+                <category android:name ="android.intent.category.DEFAULT"/>
+                    </intent-filter>
+            
+        </activity>
+        
+                  
+             
+              
+          
+    </application>
+
+</manifest>
